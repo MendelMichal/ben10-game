@@ -1,0 +1,189 @@
+@import url(dropdown_menu.css);
+@import url(form.css);
+
+html{
+    background: url(../images/ben/background.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    font-family: 'Share Tech Mono', sans-serif;
+}
+input, button, textarea, #register_link, #register_field{
+    cursor: pointer;
+    font-family: 'Share Tech Mono', sans-serif;
+    font-size: 14px;
+    padding: 2px 4px;
+    border-radius: 2px;
+}
+#login{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #83d800;
+}
+a{
+    color: #83d800;
+    text-decoration: none;
+}
+input:focus{
+    outline: none;
+}
+#login input, #register_link, #register_field, #register_field input{
+    border: 1px solid #83d800;
+    background: #000;
+    color: #83d800;
+    text-align: center;
+    width: 100px;
+}
+#login input[type="submit"]{
+    width: auto;
+}
+#register{
+    position: relative;
+    display: inline-block;
+}
+#register_field_background{
+    display: none;
+    position: absolute;
+    padding-top: 12px;
+}
+#register_field_background, #contaiment, .fieldr{
+    box-shadow:  5px 5px 40px 10px rgba(0, 0, 0, .8);    
+}
+#register_field{
+    width: auto;
+}
+#register_field input{
+    margin: 0;
+    display: block;
+    width: 200px;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #83d800;
+}
+#register_field input:last-child{
+    border: none;
+}
+#register_field input[type="submit"]{
+    text-align: right;
+}
+#footer{
+    position: fixed;
+    color: #83d800;
+    bottom: 0;
+    right: 15px;
+    background: rgba(0, 0, 0, .3);
+}
+#contaiment, .fieldr{
+    border: 3px solid #83d800;
+    background: rgba(0, 0, 0, .6);
+    color: #83d800;
+    position: static;
+    border-radius: 5px;
+}
+.fieldr{
+    color: #fff;
+    min-width: 190px;
+    min-height: 62px;
+    position: absolute;
+    padding: 5px 10px;
+}
+.powitanie{
+    top: 100%;
+    left: 15%;
+}
+.news{
+    right: 1%;
+    top: 500%;
+}
+.contaiment_index{
+    width: 480px!important;
+    height: 360px!important;
+    position: absolute;
+    left: 50%!important;
+    top: 500%!important;
+    margin-left: -240px!important;
+}
+#contaiment{
+    top: 50px;
+    width: 800px;
+    left: 50%;
+    margin-left: -400px;
+    position: absolute;
+}
+.opacity100{
+    background: rgba(0, 0, 0, 1)!important;
+}
+#content{
+    float: left; 
+    width: 68%;
+}
+#sidebar{
+    float: right;
+	width: 240px;
+    font-size: 12px;
+}
+#sidebar div{
+    margin: 0 auto;
+}
+#sidebar img{
+    max-width: 204px;
+}
+/* glowny div z like box'em */
+#like-box {
+	position: fixed;
+	z-index: 99;
+	top: 150px;  /* jego polozenie od gory */
+	left: -296px; /* szerokosc wygenerowanego boxa + 4px obramowania */
+	-webkit-transition: left 0.5s ease-out;
+	-moz-transition: left 0.5s ease-out;
+	-o-transition: left 0.5s ease-out;
+	transition: left 0.5s ease-out;
+}
+
+/* wysuniecie like box'a */
+#like-box:hover {
+	left: 0px;
+}
+
+/* zewnetrzna ramka boxa */
+#like-box .outside {
+	position: relative;
+	z-index: 1;
+	background: #3b5999;
+	padding: 2px;
+	min-width: 1px;
+	float: left;
+}
+
+/* wewnetrzne tlo boxa */
+#like-box .inside {
+	position: relative;
+	z-index: 2;
+	background: #fff;
+}
+
+/* pasek z logo FB */
+#like-box .belt {
+	position: relative;
+	z-index: 0;
+	-webkit-transform: rotate(90deg); /* obrot o 90 stopni */
+	-moz-transform: rotate(90deg); /* wiec wysokosc zamienia sie z szerokoscia */
+	-o-transform: rotate(90deg); /* obrot o 90 stopni */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); /* obrot o 90 stopni dla IE */
+	float: left;
+	width: 100px; /* wysokosc */
+	height: 40px; /* szerokosc */
+	padding: 7px 0px 0px 20px;
+	margin: 50px 0px 0px -55px;
+	background: #3b5999;
+	color: #fff;
+	font-weight: bold;
+	font-family: Arial;
+	font-size: 14px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
